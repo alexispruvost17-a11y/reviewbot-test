@@ -1,0 +1,38 @@
+
+
+Rapport --------------------------------------------
+
+
+Exercice 2 -----------------
+
+
+1. 
+
+a)
+
+- ProcessLog prend en paramètre un fichier et un destination d'écriture.
+il lit toutes les lignes du fichiers et si il trouve une ligne qui correspond à 
+que les filtres cherche, il renvoie le contenue de la lignes vers out (la destination de l'écriture).
+
+- Main permet de parser les arguments du programme, de les indentifier pour avoir
+le fichier et de paramétrer les filtres.
+Puis appel processLog avec ce qu'il viens de parser.
+
+b) 
+Le plus gros probleme de maintenance du code est que pour ajouter un filtre, il faut modifier
+le code à trois endroit différents : dans la classe filter, dans processLog ainsi que dans le main (le parser).
+
+
+
+
+2. Un filtre reçoit une ligne et répond vrai ou faux. Quelle signature de méthode décrit naturellement cette opération ? 
+
+- Prend en paramètre un string et un filtre et renvoie un boolean 
+boolean accept(String line);
+
+
+4.3 Mais biensûr cela ressemble à un Predicate.
+
+7.
+"\\[[a-zA-Z]*\\]"
+
