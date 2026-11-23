@@ -11,3 +11,4 @@ public class Smelly {
     return a == b;
   }
 }
+// modif
